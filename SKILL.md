@@ -33,6 +33,7 @@ These are hard constraints.
 Extract:
 
 - core claim
+- arguable stance
 - intended reader
 - target format/platform
 - personal or professional stakes
@@ -59,6 +60,8 @@ Pick one:
 - Narrative argument
 
 The type controls the opening, section rhythm, and ending.
+
+Before drafting, write the stance in one sentence. If it reads like "this trend is important" or "there are opportunities and challenges," rebuild the argument before polishing.
 
 ## 3. Rewrite The Article
 

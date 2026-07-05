@@ -5,6 +5,7 @@ Use this before delivery.
 ## Content
 
 - [ ] The central claim is clear in one sentence.
+- [ ] The piece has a visible stance that a smart reader could argue with.
 - [ ] The article has one main spine, not several competing arguments.
 - [ ] All facts, dates, names, and numbers are from the draft or marked `[TK]`.
 - [ ] Claims that need sourcing are softened or flagged.
@@ -31,6 +32,7 @@ Use this before delivery.
 - [ ] Tags match the article, not the hoped-for audience.
 - [ ] Charts or visuals, if used, clarify the article rather than decorating it.
 - [ ] A statistics-heavy piece has the right visual type for the data.
+- [ ] A research-led piece has considered whether a hero statistical graphic would explain the system better than several plain charts.
 
 ## Publishing Note
 

@@ -25,7 +25,7 @@ Example now included:
 
 ## Core Standard
 
-Top writing is not just “good prose.” It is a full editorial system:
+Top writing is a full editorial system:
 
 - one real point of view
 - a concrete opening

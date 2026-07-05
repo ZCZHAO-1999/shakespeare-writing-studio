@@ -16,7 +16,7 @@ But most work does not end when a person gets an answer. It ends when a decision
 
 ## The handoff is where the time goes
 
-A product manager looking for customer feedback does not only need a summary. She needs to know which complaints are new, which ones came from high-value accounts, which ones match open tickets, and which ones should change the roadmap.
+A product manager looking for customer feedback needs more than a summary. She needs to know which complaints are new, which ones came from high-value accounts, which ones match open tickets, and which ones should change the roadmap.
 
 The answer is useful. The handoff is expensive.
 

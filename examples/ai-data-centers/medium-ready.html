@@ -166,12 +166,12 @@
     <header>
       <div class="kicker">Research note · Infrastructure</div>
       <h1>The AI Boom Is Becoming A Power Grid Story</h1>
-      <p class="dek">The next AI bottleneck may not be GPUs. It may be interconnection queues, substations, transformers, water, land, and the political permission to turn compute into load.</p>
+      <p class="dek">My view: the next AI bottleneck will be negotiated in power markets before it shows up in model benchmarks.</p>
     </header>
     <article>
       <section class="lead">
-        <p>The first useful way to think about AI infrastructure is not as a cloud story.</p>
-        <p>It is a load story.</p>
+        <p>The companies that win the next phase of AI infrastructure will pair compute strategy with energy strategy.</p>
+        <p>GPU supply still matters. Model quality still matters. But the harder constraint is moving from a data-centre announcement to an energized site with enough power, cooling, transmission, permits, and local consent.</p>
         <p>Every model demo hides a physical question underneath it: where does the electricity come from, how fast can the grid deliver it, who pays for the upgrade, and what happens when compute demand lands faster than transmission can be built?</p>
       </section>
       <div class="metrics">
@@ -179,38 +179,42 @@
         <div class="metric"><strong>6.7–12%</strong><span>Potential U.S. electricity share from data centres by 2028, per LBNL / DOE.</span></div>
         <div class="metric"><strong>+175%</strong><span>Goldman Sachs Research estimate for global data-centre power-demand growth by 2030 vs. 2023.</span></div>
       </div>
-      <p>That question is no longer theoretical. The International Energy Agency projects global data-centre electricity consumption to rise from roughly <strong>485 TWh in 2025</strong> to around <strong>950 TWh in 2030</strong>. In the IEA’s framing, data centres would account for about <strong>3% of global electricity demand</strong> by 2030, with AI-focused facilities growing even faster.</p>
-      <p>In the United States, the picture is sharper. Lawrence Berkeley National Laboratory and the U.S. Department of Energy estimate U.S. data-centre electricity use rose from <strong>58 TWh in 2014</strong> to <strong>176 TWh in 2023</strong>, and could reach <strong>325–580 TWh by 2028</strong>.</p>
-      <h2>1. The demand curve is no longer gentle</h2>
+      <p>The question has moved from theoretical to financial. The International Energy Agency projects global data-centre electricity consumption to rise from roughly <strong>485 TWh in 2025</strong> to around <strong>950 TWh in 2030</strong>. In the IEA’s framing, data centres would account for about <strong>3% of global electricity demand</strong> by 2030, with AI-focused facilities growing even faster.</p>
+      <p>In the United States, the curve is sharper. Lawrence Berkeley National Laboratory and the U.S. Department of Energy estimate U.S. data-centre electricity use rose from <strong>58 TWh in 2014</strong> to <strong>176 TWh in 2023</strong>, and could reach <strong>325–580 TWh by 2028</strong>.</p>
+      <figure>
+        <img src="charts/grid-atlas.svg" alt="AI power bottleneck atlas connecting demand, grid equipment, local permission, and power growth">
+        <figcaption>A system map for the AI power bottleneck: demand, grid capacity, and local permission are becoming one constraint.</figcaption>
+      </figure>
+      <h2>1. The demand curve has changed shape</h2>
       <p>For a decade, data-centre energy demand looked manageable because efficiency gains absorbed much of the digital growth. AI changed the slope.</p>
       <figure>
         <img src="charts/global-demand.svg" alt="Global data-centre electricity demand forecast from 485 TWh in 2025 to 950 TWh in 2030">
-        <figcaption>Global demand roughly doubles by 2030. The important point is not just the level; it is the break in planning rhythm.</figcaption>
+        <figcaption>Global demand roughly doubles by 2030. The planning rhythm has changed.</figcaption>
       </figure>
-      <p>If demand grows slowly, utilities can plan around it. If demand arrives in large clusters, the constraint moves from compute availability to power availability.</p>
-      <h2>2. The U.S. is where the grid stress shows up first</h2>
+      <p>Slow demand can be absorbed through normal utility planning. Clustered demand forces utilities, regulators, and developers to make decisions under uncertainty.</p>
+      <h2>2. The U.S. is the stress test</h2>
       <p>The U.S. has the deepest hyperscaler buildout, the largest concentration of AI infrastructure, and some of the most visible grid bottlenecks.</p>
       <figure>
         <img src="charts/us-demand-range.svg" alt="U.S. data-centre electricity use, historical and forecast range">
         <figcaption>The 2028 range is wide because the real answer depends on AI server growth, utilization, efficiency, and how quickly new capacity connects.</figcaption>
       </figure>
-      <p>Forecast ranges are not a weakness here. They are the story. The uncertainty is part of what utilities, regulators, and communities now have to manage.</p>
+      <p>The wide forecast range is the signal. Planning has to happen before the industry knows which path demand will take.</p>
       <h2>3. Power demand is becoming an investment theme</h2>
       <p>Goldman Sachs Research frames the next bottleneck as a power-demand problem. Its research projects global data-centre power demand to rise by roughly <strong>175% by 2030 versus 2023</strong>.</p>
       <figure>
         <img src="charts/us-power-bars.svg" alt="U.S. data-centre power demand forecast, 31 GW in 2025, 41 GW in 2026, 66 GW in 2027">
         <figcaption>Power demand turns AI infrastructure into a broader electrical-stack story: generation, substations, cooling, transformers, transmission, and siting.</figcaption>
       </figure>
-      <p>That changes the map of AI winners. The obvious beneficiaries are chipmakers and cloud platforms. The less obvious ones sit in the electrical stack.</p>
-      <h2>4. The local politics will get harder</h2>
+      <p>That changes the map of AI winners. The obvious beneficiaries are chipmakers and cloud platforms. The less obvious winners sit in the electrical stack: grid equipment, power developers, cooling systems, transmission, backup generation, and sites that can actually get energized.</p>
+      <h2>4. Local politics will become part of AI strategy</h2>
       <p>Electricity demand is abstract until it appears on a bill, in a water debate, or at a county hearing.</p>
-      <p>A data centre may serve global AI demand, but the substation, water supply, land use, and transmission line sit in a specific place. Local communities still ask a concrete question: does this project raise our rates, consume scarce water, or delay power for homes and factories?</p>
-      <blockquote>The next phase of AI infrastructure will be judged not only by benchmark scores, but by whether the physical system around it can absorb the load.</blockquote>
-      <h2>5. The real bottleneck is coordination</h2>
-      <p>The AI industry is good at scaling software. The power grid does not scale like software.</p>
+      <p>A data centre may serve global AI demand, but the substation, water supply, land use, and transmission line sit in a specific place. Local communities still ask practical questions: will this project raise rates, consume scarce water, or delay power for homes and factories?</p>
+      <blockquote>The next phase of AI infrastructure will be judged by benchmark scores and by the physical system around them.</blockquote>
+      <h2>5. Coordination is the real bottleneck</h2>
+      <p>The AI industry is good at scaling software. The power grid scales through planning, capital, permitting, equipment lead times, and local politics.</p>
       <p>Permitting takes time. Transmission takes time. Transformers take time. Gas turbines and substations take time. Data-centre developers can announce capacity faster than utilities can deliver it.</p>
-      <p>The winners will not only be the companies with the best models. They will be the companies that can secure power, manage siting, reduce water stress, improve utilization, and treat energy as part of product strategy instead of a facilities problem.</p>
-      <p>AI is still a model race. But increasingly, the model sits inside a power contract.</p>
+      <p>The winners will be the companies that secure power early, manage siting, reduce water stress, improve utilization, and treat energy as part of product strategy.</p>
+      <p>AI is still a model race. Increasingly, the model sits inside a power contract.</p>
       <h2>Source Table</h2>
       <table>
         <thead><tr><th>Claim</th><th>Source</th><th>Figure</th></tr></thead>

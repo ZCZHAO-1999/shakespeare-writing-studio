@@ -24,6 +24,7 @@ Delete or rewrite:
 
 Use:
 
+- one arguable point of view before structure
 - short plain sentences when the idea is sharp
 - longer sentences when the writer is thinking through a tradeoff
 - one specific noun instead of three abstract nouns
@@ -33,7 +34,27 @@ Use:
 - sensory or operational detail
 - one surprising but accurate comparison
 
-## 3. Specificity Ladder
+## 3. Point Of View Test
+
+Before rewriting, write the essay's stance in one sentence.
+
+Good stances:
+
+- make a directional claim
+- name who wins, loses, pays, or changes behavior
+- admit the main uncertainty
+- can be argued against by a smart reader
+
+Weak stances:
+
+- "This trend is important."
+- "There are opportunities and challenges."
+- "The future remains uncertain."
+- "This article explores..."
+
+If the stance is weak, do not polish the prose yet. Rebuild the argument first.
+
+## 4. Specificity Ladder
 
 Weak:
 
@@ -59,7 +80,7 @@ Better:
 The first useful AI tools did not replace the meeting. They made the meeting shorter.
 ```
 
-## 4. Read-Aloud Test
+## 5. Read-Aloud Test
 
 Read the piece aloud.
 
@@ -73,7 +94,7 @@ Mark any sentence where:
 
 Rewrite those lines first.
 
-## 5. Detector-Aware, Not Detector-Obsessed
+## 6. Detector-Aware, Not Detector-Obsessed
 
 AI detectors are unreliable. Do not optimize for a score at the cost of truth.
 
@@ -87,7 +108,7 @@ Still, writing tends to feel less AI-like when it has:
 - real uncertainty
 - non-generic transitions
 
-## 6. Final Human Pass
+## 7. Final Human Pass
 
 Before delivery:
 

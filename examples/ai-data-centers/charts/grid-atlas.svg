@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900" viewBox="0 0 1280 900">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f6fbf8"/>
+      <stop offset=".55" stop-color="#eef7f2"/>
+      <stop offset="1" stop-color="#fff1dc"/>
+    </linearGradient>
+    <radialGradient id="node" cx=".35" cy=".3" r=".75">
+      <stop offset="0" stop-color="#e6fff7"/>
+      <stop offset=".55" stop-color="#86d9c8"/>
+      <stop offset="1" stop-color="#1b7f79"/>
+    </radialGradient>
+    <radialGradient id="risk" cx=".35" cy=".3" r=".75">
+      <stop offset="0" stop-color="#ffe6ca"/>
+      <stop offset=".55" stop-color="#e6a061"/>
+      <stop offset="1" stop-color="#c7632a"/>
+    </radialGradient>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#29423d" flood-opacity=".16"/>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#dce8e2" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="900" rx="34" fill="url(#bg)"/>
+  <rect width="1280" height="900" rx="34" fill="url(#grid)" opacity=".55"/>
+  <text x="70" y="74" font-family="Avenir Next, sans-serif" font-size="14" font-weight="800" letter-spacing="5" fill="#1b7f79">AI POWER BOTTLENECK ATLAS</text>
+  <text x="70" y="136" font-family="Georgia, serif" font-size="54" font-weight="700" fill="#172523">The model race now runs through the grid</text>
+  <text x="72" y="178" font-family="Avenir Next, sans-serif" font-size="20" fill="#5f706b">Data-centre demand, power availability, and local permission are converging into one infrastructure constraint.</text>
+
+  <g transform="translate(80 240)">
+    <circle cx="390" cy="300" r="230" fill="#dff6ef" opacity=".65"/>
+    <circle cx="390" cy="300" r="166" fill="none" stroke="#b7dcd1" stroke-width="22" opacity=".8"/>
+    <circle cx="390" cy="300" r="92" fill="none" stroke="#f3c17d" stroke-width="20" opacity=".82"/>
+    <circle cx="390" cy="300" r="42" fill="#1b7f79"/>
+    <text x="344" y="292" font-family="Avenir Next, sans-serif" font-size="15" font-weight="800" fill="#fff">AI</text>
+    <text x="344" y="314" font-family="Avenir Next, sans-serif" font-size="15" font-weight="800" fill="#fff">LOAD</text>
+    <path d="M390 300C260 190 210 112 144 66" fill="none" stroke="#9db7b0" stroke-width="1.4"/>
+    <path d="M390 300C520 162 650 90 780 54" fill="none" stroke="#9db7b0" stroke-width="1.4"/>
+    <path d="M390 300C612 310 760 384 910 484" fill="none" stroke="#9db7b0" stroke-width="1.4"/>
+    <path d="M390 300C292 470 210 552 120 602" fill="none" stroke="#9db7b0" stroke-width="1.4"/>
+
+    <g filter="url(#soft)">
+      <circle cx="144" cy="66" r="54" fill="url(#node)"/>
+      <circle cx="780" cy="54" r="72" fill="url(#risk)"/>
+      <circle cx="910" cy="484" r="66" fill="url(#node)"/>
+      <circle cx="120" cy="602" r="60" fill="url(#risk)"/>
+      <circle cx="255" cy="126" r="34" fill="url(#node)" opacity=".8"/>
+      <circle cx="602" cy="120" r="42" fill="url(#node)" opacity=".75"/>
+      <circle cx="706" cy="362" r="34" fill="url(#risk)" opacity=".78"/>
+      <circle cx="242" cy="486" r="38" fill="url(#node)" opacity=".72"/>
+      <circle cx="512" cy="506" r="46" fill="url(#node)" opacity=".74"/>
+    </g>
+
+    <g font-family="Avenir Next, sans-serif">
+      <rect x="22" y="124" width="246" height="92" rx="18" fill="#fffefa" filter="url(#soft)"/>
+      <text x="46" y="158" font-size="28" font-weight="800" fill="#172523">485 → 950 TWh</text>
+      <text x="46" y="186" font-size="16" fill="#60706b">global data-centre electricity demand, 2025–2030</text>
+      <text x="46" y="208" font-size="13" fill="#8a9692">Source: IEA</text>
+
+      <rect x="676" y="138" width="270" height="104" rx="18" fill="#fffefa" filter="url(#soft)"/>
+      <text x="700" y="172" font-size="28" font-weight="800" fill="#172523">325–580 TWh</text>
+      <text x="700" y="200" font-size="16" fill="#60706b">possible U.S. data-centre electricity use by 2028</text>
+      <text x="700" y="224" font-size="13" fill="#8a9692">Source: LBNL / DOE</text>
+
+      <rect x="724" y="530" width="258" height="96" rx="18" fill="#fffefa" filter="url(#soft)"/>
+      <text x="748" y="564" font-size="28" font-weight="800" fill="#172523">31 → 66 GW</text>
+      <text x="748" y="592" font-size="16" fill="#60706b">U.S. data-centre power demand, 2025–2027</text>
+      <text x="748" y="614" font-size="13" fill="#8a9692">Source: Goldman Sachs</text>
+
+      <rect x="24" y="664" width="298" height="96" rx="18" fill="#fffefa" filter="url(#soft)"/>
+      <text x="48" y="698" font-size="28" font-weight="800" fill="#172523">Local permission</text>
+      <text x="48" y="726" font-size="16" fill="#60706b">rates, water, land, transmission, and community approvals</text>
+    </g>
+  </g>
+
+  <g transform="translate(930 246)" font-family="Avenir Next, sans-serif">
+    <rect x="0" y="0" width="280" height="402" rx="26" fill="#fffefa" filter="url(#soft)"/>
+    <text x="28" y="48" font-size="20" font-weight="800" fill="#172523">Read the map</text>
+    <line x1="28" y1="70" x2="252" y2="70" stroke="#dfe8e4"/>
+    <circle cx="46" cy="118" r="12" fill="#1b7f79"/>
+    <text x="72" y="124" font-size="16" fill="#4e5d59">Teal nodes: energy capacity and grid equipment.</text>
+    <circle cx="46" cy="176" r="12" fill="#d67a35"/>
+    <text x="72" y="182" font-size="16" fill="#4e5d59">Orange nodes: risk pressure points.</text>
+    <path d="M32 236H252" stroke="#9db7b0" stroke-width="1.4"/>
+    <text x="28" y="274" font-size="16" fill="#4e5d59">The story is not a single chart. It is a system of constraints arriving at once.</text>
+    <rect x="28" y="318" width="224" height="44" rx="12" fill="#eef7f0"/>
+    <text x="48" y="346" font-size="15" font-weight="800" fill="#1b7f79">Compute needs a power strategy.</text>
+  </g>
+  <text x="70" y="848" font-family="Avenir Next, sans-serif" font-size="14" fill="#7a8783">Sources: International Energy Agency; Lawrence Berkeley National Laboratory; U.S. Department of Energy; Goldman Sachs Research.</text>
+</svg>
