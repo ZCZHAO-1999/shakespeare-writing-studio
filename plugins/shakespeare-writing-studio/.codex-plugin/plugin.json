@@ -1,0 +1,45 @@
+{
+  "name": "shakespeare-writing-studio",
+  "version": "1.0.0",
+  "description": "Agent-ready writing studio for Chinese WeChat articles, English essays, research writing, human voice editing, source-bound data storytelling, and statistical graphics.",
+  "author": {
+    "name": "Shakespeare Writing Studio",
+    "url": "https://github.com/ZCZHAO-1999/shakespeare-writing-studio"
+  },
+  "homepage": "https://github.com/ZCZHAO-1999/shakespeare-writing-studio",
+  "repository": "https://github.com/ZCZHAO-1999/shakespeare-writing-studio",
+  "license": "MIT",
+  "keywords": [
+    "writing",
+    "wechat",
+    "medium",
+    "claude-code",
+    "claude-cli",
+    "codex-cli",
+    "data-storytelling",
+    "statistical-graphics",
+    "human-voice"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Shakespeare Writing Studio",
+    "shortDescription": "Publish-ready Chinese and English writing workflow for agents.",
+    "longDescription": "A unified editorial workflow for Chinese WeChat articles, English essays, research writing, human voice editing, source-bound data storytelling, statistical graphics, cover design, and platform-ready publishing packages.",
+    "developerName": "Shakespeare Writing Studio",
+    "category": "Productivity",
+    "capabilities": [
+      "Write",
+      "Research",
+      "Edit",
+      "Visualize"
+    ],
+    "websiteURL": "https://github.com/ZCZHAO-1999/shakespeare-writing-studio",
+    "defaultPrompt": [
+      "Turn this topic into a publish-ready WeChat article.",
+      "Rewrite this essay with stronger human voice.",
+      "Create a research article with source-backed charts."
+    ],
+    "brandColor": "#B54636",
+    "logo": "./assets/logo.png"
+  }
+}

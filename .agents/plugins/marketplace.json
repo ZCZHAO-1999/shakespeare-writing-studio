@@ -1,0 +1,20 @@
+{
+  "name": "shakespeare-writing-studio",
+  "interface": {
+    "displayName": "Shakespeare Writing Studio"
+  },
+  "plugins": [
+    {
+      "name": "shakespeare-writing-studio",
+      "source": {
+        "source": "local",
+        "path": "./plugins/shakespeare-writing-studio"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
