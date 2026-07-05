@@ -58,6 +58,9 @@ Reject immediately:
 - AI-generated image with broken text inside
 - infographic that merely repeats the adjacent paragraph
 - chart with unsupported or invented numbers
+- literal mountain / flag / summit / rocket-arrow visuals for abstract market momentum
+- cover diagrams that look clever in isolation but become unreadable at mobile scale
+- unsupported product or strategy labels invented to make the article sound deeper
 
 ## 四、排版上线门槛
 

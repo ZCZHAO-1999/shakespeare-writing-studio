@@ -24,6 +24,7 @@ For every task:
 
 - `references/source-quality.md` before any background search.
 - `references/human-voice.md` before rewriting.
+- `references/editorial-lessons.md` before drafting, titling, or designing visuals.
 - `references/visual-production.md` before any cover, chart, diagram, or image.
 - `references/editorial-qa.md` before delivery.
 
@@ -55,6 +56,7 @@ Extract:
 - intended reader
 - core claim
 - arguable stance
+- title direction and search terms
 - facts, dates, names, numbers
 - source needs
 - examples and scenes
@@ -62,6 +64,8 @@ Extract:
 - phrases that sound AI-generated
 
 Before drafting, write the stance in one sentence. If it reads like "this trend is important," "值得关注," or "there are opportunities and challenges," rebuild the argument before polishing.
+
+If the user gives a sharper title direction, preserve its tension and keywords. Do not smooth it into a safer generic title.
 
 ## 2. Choose The Format
 
@@ -115,6 +119,7 @@ Rules:
 - Keep the writer's point of view visible.
 - Remove generic AI scaffolding.
 - Do not overbalance the argument into bland neutrality.
+- Do not invent strategic frames that the sources and article do not support.
 
 ## 5. Visuals And Charts
 
@@ -132,6 +137,8 @@ Before making a visual:
 Hard rule: do not default to dark background. Dark visuals are allowed only when the article's subject, tone, and metaphor justify them.
 
 For research-led articles, consider one hero statistical graphic when the reader needs to see a system rather than one metric.
+
+Cover rule: the cover must be understood in 3 seconds on a phone. Avoid literal mountain / flag / summit graphics, generic route maps, cheap arrows, and abstract node diagrams unless the article itself demands that metaphor.
 
 ## 6. Platform Packaging
 
@@ -158,6 +165,7 @@ The piece is not done until:
 - data sources are listed when used
 - visuals match the article direction
 - charts clarify the argument
+- cover does not lower the article's perceived quality
 - platform preview reads well on mobile
 - the ending lands with a thought, not a summary
 
@@ -169,4 +177,5 @@ The piece is not done until:
 4. Remove obvious AI sentence scaffolds.
 5. Never use visuals as decoration.
 6. Never default to one visual style across projects.
-7. If AI assistance materially shaped the article and the target platform requires disclosure, note it in `publishing-note.md`.
+7. Never use unsupported architecture/product language to make the article sound deeper.
+8. If AI assistance materially shaped the article and the target platform requires disclosure, note it in `publishing-note.md`.

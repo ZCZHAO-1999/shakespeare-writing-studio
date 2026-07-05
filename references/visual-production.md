@@ -60,6 +60,7 @@ Rules:
 - Use real visual metaphors from the article: factory line, search chain, customer page, data trail, decision table.
 - Keep all small labels readable after the image is scaled to 390px mobile width.
 - Add article-specific substance: mechanism names, real actors, product steps, evidence categories, constraints, or tradeoffs from the draft.
+- A visual metaphor must raise the article's perceived quality. Literal mountains, flags, podiums, rocket arrows, and "summit" clichés are rejected unless the story is actually about those objects.
 
 ## 二、视觉质量标准
 
@@ -74,6 +75,7 @@ A visual is publishable only if it passes these checks:
 - It matches the article's tone and the other figures in the same package.
 - It is not locked into one dark tech style. Choose a visual direction from the article's industry, tone, and reader expectation.
 - It passes `release-gate.md`: generic node diagrams are rejected for final delivery.
+- It should not require the reader to decode the designer's private metaphor.
 
 ## 三、Visual Direction Matrix / 视觉方向矩阵
 
@@ -87,6 +89,7 @@ Pick one direction before generating any visual. The same article should use one
 | Human Profile | founders, teams, interviews | photographic or illustrated portrait space, quiet grain, one strong quote, editorial crop | corporate headshot collage, motivational poster style |
 | Data Evidence | public metrics, reports, comparisons | one hero number, source line, compact chips, high contrast | unsupported precision, chartjunk, tiny legends |
 | Conceptual Cover | abstract industry thesis | symbolic structure, map, chain, split surface, clean title zone | generic brain/circuit/robot imagery |
+| Event Pricing Board | regulatory shock, market repricing, finance/tech news | filing-board composition, stamps, market tape, evidence cards, restrained red/teal accents | literal mountains, flags, rockets, cheap up-arrows |
 
 If using the deterministic code route, implement these directions through color, typography, layout density, line style, and metaphor. Do not default to the dark graphite theme.
 
@@ -101,12 +104,14 @@ Structure:
 - Subject or diagram occupies the center and right.
 - Title zone stays clean.
 - Bottom plate can hold series label, issue label, or article type.
+- The right side should be legible as a cover, not a puzzle. Use 2-3 strong signals before adding small labels.
 
 Deterministic options:
 - industrial map for manufacturing stories
 - query-to-action network for AI search stories
 - customer workspace diagram for SaaS/product stories
 - capital flow / supply chain map for finance stories
+- event pricing board for regulatory or valuation stories
 
 ### 2. Mechanism Diagram
 
@@ -171,6 +176,8 @@ When only code is available, build images in this order:
 - Every project uses the same dark background: reads as template, not editorial direction.
 - Dark background chosen only because it looks "premium": reject and choose a direction from article content.
 - Simple style demo used as final work: fails the go-live gate.
+- Literal mountain / flag / summit visuals for market narratives: lowers the editorial grade.
+- Big arrows used as proof of momentum: looks like a template unless tied to real data.
 
 ## 七、Required Output Note
 
