@@ -113,6 +113,10 @@
       background: linear-gradient(90deg, var(--accent), var(--warm));
     }
     figure { margin: 40px 0 46px; }
+    figure.wide {
+      width: min(940px, 122%);
+      margin-left: max(-11%, -82px);
+    }
     figure img {
       width: 100%;
       display: block;
@@ -157,6 +161,7 @@
       header, article { border-radius: 22px; }
       p { font-size: 19px; line-height: 1.78; }
       .metrics { grid-template-columns: 1fr; }
+      figure.wide { width: 100%; margin-left: 0; }
       table { display: block; overflow-x: auto; }
     }
   </style>
@@ -181,7 +186,7 @@
       </div>
       <p>The question has moved from theoretical to financial. The International Energy Agency projects global data-centre electricity consumption to rise from roughly <strong>485 TWh in 2025</strong> to around <strong>950 TWh in 2030</strong>. In the IEA’s framing, data centres would account for about <strong>3% of global electricity demand</strong> by 2030, with AI-focused facilities growing even faster.</p>
       <p>In the United States, the curve is sharper. Lawrence Berkeley National Laboratory and the U.S. Department of Energy estimate U.S. data-centre electricity use rose from <strong>58 TWh in 2014</strong> to <strong>176 TWh in 2023</strong>, and could reach <strong>325–580 TWh by 2028</strong>.</p>
-      <figure>
+      <figure class="wide">
         <img src="charts/grid-atlas.svg" alt="AI power bottleneck atlas connecting demand, grid equipment, local permission, and power growth">
         <figcaption>A system map for the AI power bottleneck: demand, grid capacity, and local permission are becoming one constraint.</figcaption>
       </figure>
