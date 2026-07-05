@@ -21,6 +21,7 @@ Before writing, read:
 - `references/medium-writing-patterns.md`
 - `references/human-voice.md`
 - `references/platform-formats.md`
+- `references/source-quality.md` before any background search
 - `references/research-data.md` when the piece needs current facts, statistics, market data, or external evidence
 - `references/data-visuals.md` when charts, data cards, timelines, maps, or word clouds may help
 - `references/editorial-qa.md`
@@ -115,6 +116,8 @@ Run `references/research-data.md` if the draft needs:
 - policy or demographic context
 - historical comparison
 
+Before any search, apply `references/source-quality.md`: use only top-tier sources and reject generic SEO, random blogs, unsourced statistics, and AI summaries.
+
 Run `references/data-visuals.md` if the data would be clearer as:
 
 - line chart
@@ -152,3 +155,4 @@ The piece is not done until:
 3. If AI assistance materially shaped the article and the target platform requires or expects disclosure, note that in `publishing-note.md`.
 4. Never optimize only for AI detectors. Optimize for truth, specificity, voice, and editorial quality.
 5. If a sentence could fit any essay, rewrite it or delete it.
+6. Background search must use top-tier sources only; never generate research from weak or random internet material.

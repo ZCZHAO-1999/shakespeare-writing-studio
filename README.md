@@ -91,6 +91,7 @@ Search keywords:
 
 - [SKILL.md](SKILL.md): core execution protocol.
 - [references/platform-formats.md](references/platform-formats.md): writing and layout rules across Medium, Substack, memos, op-eds, speeches, and web articles.
+- [references/source-quality.md](references/source-quality.md): top-tier source rules for background research.
 - [references/medium-writing-patterns.md](references/medium-writing-patterns.md): structures for Medium/Substack-style English essays.
 - [references/human-voice.md](references/human-voice.md): anti-AI style rules and human voice editing.
 - [references/research-data.md](references/research-data.md): evidence search and source discipline.
