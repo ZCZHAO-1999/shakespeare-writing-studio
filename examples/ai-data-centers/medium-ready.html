@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The AI Boom Is Becoming A Power Grid Story</title>
+  <style>
+    :root {
+      --ink: #16211f;
+      --muted: #63706d;
+      --line: #dfe8e4;
+      --accent: #1b7f79;
+      --warm: #d67a35;
+      --paper: #fffefa;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 2%, rgba(27, 127, 121, .14), transparent 28%),
+        radial-gradient(circle at 86% 18%, rgba(214, 122, 53, .16), transparent 30%),
+        linear-gradient(180deg, #f7fbf6 0%, #fbfaf5 54%, #eff6f2 100%);
+      font-family: Charter, "Iowan Old Style", Georgia, serif;
+    }
+    main {
+      width: min(860px, calc(100% - 34px));
+      margin: 46px auto 70px;
+    }
+    header {
+      padding: 54px min(56px, 6vw);
+      border-radius: 34px;
+      background: rgba(255, 254, 250, .88);
+      border: 1px solid rgba(214, 226, 220, .95);
+      box-shadow: 0 22px 64px rgba(39, 68, 62, .12);
+    }
+    .kicker {
+      margin-bottom: 18px;
+      color: var(--accent);
+      font: 700 13px/1.3 "Avenir Next", sans-serif;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(44px, 8vw, 74px);
+      line-height: .96;
+      letter-spacing: -.055em;
+    }
+    .dek {
+      max-width: 680px;
+      margin: 28px 0 0;
+      color: #3e504b;
+      font-size: 23px;
+      line-height: 1.55;
+    }
+    article {
+      margin-top: 28px;
+      padding: min(48px, 6vw);
+      border-radius: 34px;
+      background: rgba(255, 254, 250, .82);
+      border: 1px solid rgba(214, 226, 220, .82);
+    }
+    p {
+      margin: 0 0 27px;
+      font-size: 21px;
+      line-height: 1.82;
+    }
+    .lead p:first-child::first-letter {
+      float: left;
+      margin: 9px 12px 0 0;
+      color: var(--warm);
+      font-size: 82px;
+      line-height: .82;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 36px 0 44px;
+    }
+    .metric {
+      padding: 22px 18px;
+      border-radius: 22px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 30px rgba(42, 66, 60, .08);
+    }
+    .metric strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--accent);
+      font: 800 31px/1 "Avenir Next", sans-serif;
+      letter-spacing: -.03em;
+    }
+    .metric span {
+      color: var(--muted);
+      font: 15px/1.55 "Avenir Next", sans-serif;
+    }
+    h2 {
+      margin: 58px 0 20px;
+      font-size: 32px;
+      line-height: 1.2;
+      letter-spacing: -.035em;
+    }
+    h2::before {
+      content: "";
+      display: block;
+      width: 48px;
+      height: 4px;
+      margin-bottom: 18px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), var(--warm));
+    }
+    figure { margin: 40px 0 46px; }
+    figure img {
+      width: 100%;
+      display: block;
+      border-radius: 28px;
+      box-shadow: 0 20px 52px rgba(36, 62, 58, .1);
+    }
+    figcaption {
+      margin-top: 12px;
+      color: var(--muted);
+      font: 14px/1.55 "Avenir Next", sans-serif;
+    }
+    blockquote {
+      margin: 42px 0;
+      padding: 28px 30px;
+      border-left: 5px solid var(--warm);
+      background: rgba(255, 246, 232, .72);
+      font-size: 27px;
+      line-height: 1.55;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 28px 0;
+      font: 14px/1.45 "Avenir Next", sans-serif;
+      background: var(--paper);
+      border-radius: 18px;
+      overflow: hidden;
+    }
+    th, td { padding: 14px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { text-align: left; color: #24423d; background: #eef7f0; }
+    td { color: #53625e; }
+    a { color: #146f69; }
+    .sources {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font: 15px/1.72 "Avenir Next", sans-serif;
+    }
+    @media (max-width: 680px) {
+      main { width: min(100% - 18px, 860px); margin-top: 12px; }
+      header, article { border-radius: 22px; }
+      p { font-size: 19px; line-height: 1.78; }
+      .metrics { grid-template-columns: 1fr; }
+      table { display: block; overflow-x: auto; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="kicker">Research note · Infrastructure</div>
+      <h1>The AI Boom Is Becoming A Power Grid Story</h1>
+      <p class="dek">The next AI bottleneck may not be GPUs. It may be interconnection queues, substations, transformers, water, land, and the political permission to turn compute into load.</p>
+    </header>
+    <article>
+      <section class="lead">
+        <p>The first useful way to think about AI infrastructure is not as a cloud story.</p>
+        <p>It is a load story.</p>
+        <p>Every model demo hides a physical question underneath it: where does the electricity come from, how fast can the grid deliver it, who pays for the upgrade, and what happens when compute demand lands faster than transmission can be built?</p>
+      </section>
+      <div class="metrics">
+        <div class="metric"><strong>950 TWh</strong><span>Projected global data-centre electricity demand by 2030, according to the IEA.</span></div>
+        <div class="metric"><strong>6.7–12%</strong><span>Potential U.S. electricity share from data centres by 2028, per LBNL / DOE.</span></div>
+        <div class="metric"><strong>+175%</strong><span>Goldman Sachs Research estimate for global data-centre power-demand growth by 2030 vs. 2023.</span></div>
+      </div>
+      <p>That question is no longer theoretical. The International Energy Agency projects global data-centre electricity consumption to rise from roughly <strong>485 TWh in 2025</strong> to around <strong>950 TWh in 2030</strong>. In the IEA’s framing, data centres would account for about <strong>3% of global electricity demand</strong> by 2030, with AI-focused facilities growing even faster.</p>
+      <p>In the United States, the picture is sharper. Lawrence Berkeley National Laboratory and the U.S. Department of Energy estimate U.S. data-centre electricity use rose from <strong>58 TWh in 2014</strong> to <strong>176 TWh in 2023</strong>, and could reach <strong>325–580 TWh by 2028</strong>.</p>
+      <h2>1. The demand curve is no longer gentle</h2>
+      <p>For a decade, data-centre energy demand looked manageable because efficiency gains absorbed much of the digital growth. AI changed the slope.</p>
+      <figure>
+        <img src="charts/global-demand.svg" alt="Global data-centre electricity demand forecast from 485 TWh in 2025 to 950 TWh in 2030">
+        <figcaption>Global demand roughly doubles by 2030. The important point is not just the level; it is the break in planning rhythm.</figcaption>
+      </figure>
+      <p>If demand grows slowly, utilities can plan around it. If demand arrives in large clusters, the constraint moves from compute availability to power availability.</p>
+      <h2>2. The U.S. is where the grid stress shows up first</h2>
+      <p>The U.S. has the deepest hyperscaler buildout, the largest concentration of AI infrastructure, and some of the most visible grid bottlenecks.</p>
+      <figure>
+        <img src="charts/us-demand-range.svg" alt="U.S. data-centre electricity use, historical and forecast range">
+        <figcaption>The 2028 range is wide because the real answer depends on AI server growth, utilization, efficiency, and how quickly new capacity connects.</figcaption>
+      </figure>
+      <p>Forecast ranges are not a weakness here. They are the story. The uncertainty is part of what utilities, regulators, and communities now have to manage.</p>
+      <h2>3. Power demand is becoming an investment theme</h2>
+      <p>Goldman Sachs Research frames the next bottleneck as a power-demand problem. Its research projects global data-centre power demand to rise by roughly <strong>175% by 2030 versus 2023</strong>.</p>
+      <figure>
+        <img src="charts/us-power-bars.svg" alt="U.S. data-centre power demand forecast, 31 GW in 2025, 41 GW in 2026, 66 GW in 2027">
+        <figcaption>Power demand turns AI infrastructure into a broader electrical-stack story: generation, substations, cooling, transformers, transmission, and siting.</figcaption>
+      </figure>
+      <p>That changes the map of AI winners. The obvious beneficiaries are chipmakers and cloud platforms. The less obvious ones sit in the electrical stack.</p>
+      <h2>4. The local politics will get harder</h2>
+      <p>Electricity demand is abstract until it appears on a bill, in a water debate, or at a county hearing.</p>
+      <p>A data centre may serve global AI demand, but the substation, water supply, land use, and transmission line sit in a specific place. Local communities still ask a concrete question: does this project raise our rates, consume scarce water, or delay power for homes and factories?</p>
+      <blockquote>The next phase of AI infrastructure will be judged not only by benchmark scores, but by whether the physical system around it can absorb the load.</blockquote>
+      <h2>5. The real bottleneck is coordination</h2>
+      <p>The AI industry is good at scaling software. The power grid does not scale like software.</p>
+      <p>Permitting takes time. Transmission takes time. Transformers take time. Gas turbines and substations take time. Data-centre developers can announce capacity faster than utilities can deliver it.</p>
+      <p>The winners will not only be the companies with the best models. They will be the companies that can secure power, manage siting, reduce water stress, improve utilization, and treat energy as part of product strategy instead of a facilities problem.</p>
+      <p>AI is still a model race. But increasingly, the model sits inside a power contract.</p>
+      <h2>Source Table</h2>
+      <table>
+        <thead><tr><th>Claim</th><th>Source</th><th>Figure</th></tr></thead>
+        <tbody>
+          <tr><td>Global data-centre electricity demand roughly doubles by 2030</td><td>International Energy Agency</td><td>485 TWh to 950 TWh</td></tr>
+          <tr><td>U.S. data-centre electricity use forecast range</td><td>Lawrence Berkeley National Laboratory / DOE</td><td>325–580 TWh by 2028</td></tr>
+          <tr><td>Global data-centre power demand growth</td><td>Goldman Sachs Research</td><td>+175% by 2030 vs. 2023</td></tr>
+        </tbody>
+      </table>
+      <section class="sources">
+        Sources: International Energy Agency; Lawrence Berkeley National Laboratory; U.S. Department of Energy; Goldman Sachs Research; Marcus by Goldman Sachs.
+      </section>
+    </article>
+  </main>
+</body>
+</html>

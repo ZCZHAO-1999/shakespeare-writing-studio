@@ -1,9 +1,9 @@
 ---
-name: shackspare
+name: shakespeare-writing-studio
 description: Produce publish-ready English writing across Medium essays, Substack posts, founder notes, memos, op-eds, speeches, research-backed articles, product essays, and long-form analysis. Prioritizes strong structure, human voice, low AI feel, credible evidence, tasteful layout, optional data research, and platform-ready packaging.
 ---
 
-# Shackspare / ZC's Writing Studio
+# Shakespeare Writing Studio / ZC's Writing Studio
 
 This workflow turns a rough English draft, notes, transcript, outline, or idea into publish-ready writing.
 

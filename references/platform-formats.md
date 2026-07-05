@@ -1,6 +1,6 @@
 # Platform Formats
 
-Shackspare is not limited to Medium or Substack. Choose the format before editing.
+Shakespeare Writing Studio is not limited to Medium or Substack. Choose the format before editing.
 
 ## 1. Medium Essay
 
