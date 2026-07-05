@@ -1,6 +1,6 @@
-# DeepSeek / Doubao / Chat-Only Prompt Pack
+# DeepSeek / 豆包 Doubao / Chat-Only Prompt Pack
 
-Use this when the user cannot install Claude/Codex plugins and only knows how to use a chat model such as DeepSeek, Doubao, Kimi, Qwen, ChatGPT web, or another browser-based assistant.
+Use this when the user cannot install Claude/Codex plugins and only knows how to use a chat model such as DeepSeek, 豆包 Doubao, Kimi, Qwen, ChatGPT web, or another browser-based assistant.
 
 Copy the prompt below into the chat, then paste the topic, draft, notes, links, or source material after it.
 
