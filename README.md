@@ -1,82 +1,104 @@
 # Shakespeare Writing Studio
 
-Agent-ready English writing workflow for Medium, Substack, research essays, founder notes, analytical articles, memos, op-eds, and publish-ready long-form work.
+Agent-ready writing studio for Chinese and English publish-ready work: WeChat articles, Medium/Substack essays, research notes, founder memos, op-eds, speeches, data storytelling, statistical graphics, and polished web articles.
 
 <img src="assets/shakespeare-logo.png" alt="Shakespeare Writing Studio logo" width="280">
 
-This repository is built for Claude Code, Claude CLI, Codex CLI, and other local agents that can read files, research carefully, edit prose, build charts, and produce Markdown or HTML deliverables.
+One unified editorial workflow handles every output type:
 
-It started from article publishing workflows, but it is not limited to one platform. The standard is broader: strong thinking, human voice, credible evidence, tasteful layout, and a final package that can actually go live.
+- Chinese finance / technology WeChat articles
+- English Medium / Substack essays
+- research-backed articles
+- executive memos and founder notes
+- source-bound statistics and charts
+- creative statistical graphics and visual explainers
+- HTML previews and publish-ready packages
 
 ## What It Produces
 
 Core package:
 
-- `final.md`: publish-ready essay, article, memo, speech, or research note.
-- `medium-ready.html`: clean web preview for Medium/Substack/blog-style reading.
-- `publishing-note.md`: title set, subtitle, social copy, voice notes, fact cautions, and AI-feel cleanup notes.
-- `charts/*.svg`: optional source-backed charts, timelines, maps, word clouds, or data cards.
+- `final.md`: publish-ready article, essay, memo, speech, or research note.
+- platform preview: `wechat-ready.html`, `medium-ready.html`, or clean web HTML.
+- `charts/*.svg` or `assets/*.svg`: source-backed charts, covers, timelines, mechanism diagrams, maps, word clouds, or hero statistical graphics.
+- `publishing-note.md`: title set, subtitle/deck, social copy, source cautions, visual notes, and AI-feel cleanup notes.
 
-Example now included:
+Examples:
 
-- [The AI Boom Is Becoming A Power Grid Story](examples/ai-data-centers/final.md)
+- [Chinese WeChat article: Fable 5 被封禁，智谱冲万亿。中国模型登顶日即将来临？](examples/fable-zhipu/final.md)
+- [WeChat HTML preview](examples/fable-zhipu/wechat-ready.html)
+- [English research article: The AI Boom Is Becoming A Power Grid Story](examples/ai-data-centers/final.md)
 - [Medium-style HTML preview](examples/ai-data-centers/medium-ready.html)
-- [Research charts](examples/ai-data-centers/charts)
+- [Research charts and atlas](examples/ai-data-centers/charts)
 
 ## Core Standard
 
 Top writing is a full editorial system:
 
-- one real point of view
-- a concrete opening
+- one arguable point of view
+- concrete opening
 - structure that carries the reader forward
 - human sentence rhythm
-- evidence where evidence matters
-- layout that respects reading flow
+- credible evidence where evidence matters
+- platform-aware layout
+- visuals matched to the article, not a default style
 - charts only when they clarify the argument
-- an ending that lands instead of summarizing
+- an ending that lands
 
-If a paragraph could appear in any article on the internet, it probably should not survive the edit.
+If a paragraph or graphic could appear in any article on the internet, it probably should not survive the edit.
+
+## Unified Workflow
+
+Start here:
+
+- [SKILL.md](SKILL.md)
+
+The workflow chooses modules by task:
+
+- Chinese WeChat: [references/wechat/chinese-finance-tech-writing.md](references/wechat/chinese-finance-tech-writing.md), [references/wechat/wechat-layout-patterns.md](references/wechat/wechat-layout-patterns.md), [references/wechat/layout-wechat.md](references/wechat/layout-wechat.md)
+- English long-form: [references/medium-writing-patterns.md](references/medium-writing-patterns.md), [references/platform-formats.md](references/platform-formats.md), [references/human-voice.md](references/human-voice.md)
+- Research and sources: [references/source-quality.md](references/source-quality.md), [references/research-data.md](references/research-data.md)
+- Data and visuals: [references/data-visuals.md](references/data-visuals.md), [references/visual-production.md](references/visual-production.md)
+- Final QA: [references/editorial-qa.md](references/editorial-qa.md), [references/release-gate.md](references/release-gate.md)
+
+## Visual Principle
+
+The visual style must come from the article.
+
+No default dark mode. No default purple. No generic tech cards. No chart because “a chart looks serious.”
+
+Before creating a visual, choose a direction:
+
+- Clean Analyst: finance, strategy, market analysis, public data
+- Energy / Infrastructure Report: power, climate, industrial systems, logistics
+- Product Interface: SaaS, AI workflow, enterprise tools
+- WeChat Editorial Cover: mobile-first Chinese article packaging
+- Data Evidence: statistics, comparisons, source-backed claims
+- Conceptual Mechanism: abstract thesis, causal route, supply chain, map
+
+Dark visuals are allowed only when the article’s tone and metaphor call for them. A dark background chosen merely because it looks premium fails QA.
 
 ## Human Voice / Lower AI Feel
 
-This workflow is designed to reduce AI-like writing patterns by default.
-
-It avoids:
+The workflow removes:
 
 - generic thesis openings
 - “not only X, but also Y” scaffolding
 - symmetrical three-part paragraphs everywhere
-- hollow transitions like “in today’s fast-paced world”
-- overuse of “delve,” “leverage,” “unlock,” “transform,” “foster,” “robust,” and “seamless”
-- conclusions that summarize instead of landing
-- fake certainty, fake intimacy, and motivational poster language
+- hollow transitions
+- inflated business jargon
+- endings that merely summarize
+- fake certainty and motivational-poster language
 
 It encourages:
 
 - specific scenes
-- uneven but intentional sentence rhythm
+- uneven but intentional rhythm
 - original analogies
 - lived constraints
-- small admissions of uncertainty
 - concrete verbs
 - named stakes
 - one central claim per piece
-
-## Research And Data
-
-Use research only when it makes the piece sharper.
-
-The workflow can:
-
-- search for relevant public statistics
-- prioritize official, primary, or reputable sources
-- extract numbers into a source table
-- decide whether a chart is actually useful
-- choose a chart type: line, bar, slope, scatter, heatmap, small multiples, timeline, map, word cloud, or quote/data card
-- produce charts only when they improve the reader’s understanding
-
-Important constraint: not every strong article needs charts. Unless the piece is explicitly data-led, visuals should support the argument rather than take over the essay.
 
 ## Source Standard
 
@@ -98,72 +120,50 @@ Rejected sources:
 - random blogs with no primary trail
 - reposts and screenshot-only evidence
 
-See [references/source-quality.md](references/source-quality.md).
+## Agent Compatibility
 
-## How To Use
-
-Start here:
-
-- [SKILL.md](SKILL.md)
-
-Recommended agent flow:
-
-1. Read [references/platform-formats.md](references/platform-formats.md) to choose the article type.
-2. Read [references/human-voice.md](references/human-voice.md) before rewriting.
-3. Read [references/source-quality.md](references/source-quality.md) before any background search.
-4. Read [references/research-data.md](references/research-data.md) when evidence is required.
-5. Read [references/data-visuals.md](references/data-visuals.md) before creating charts.
-6. Read [references/editorial-qa.md](references/editorial-qa.md) before delivery.
-
-Compatible with:
+Works with:
 
 - Claude Code
 - Claude CLI
 - Codex CLI
-- local CLI agents that can read files, browse/search when needed, rewrite drafts, run scripts, and produce Markdown/HTML outputs
+- local CLI agents that can read files, browse/search when needed, rewrite drafts, run scripts, and produce Markdown/HTML/SVG outputs
 
 Search keywords:
 
+- Shakespeare Writing Studio
+- WeChat article workflow
 - Medium writing workflow
-- Substack essay workflow
 - Claude Code writing skill
 - Claude CLI writing workflow
 - Codex CLI writing skill
 - AI human voice editing
-- reduce AI writing style
 - data storytelling workflow
 - research essay workflow
+- statistical graphics workflow
 
 ## Repository Structure
 
-- [SKILL.md](SKILL.md): core execution protocol.
-- [references/platform-formats.md](references/platform-formats.md): writing and layout rules across Medium, Substack, memos, op-eds, speeches, and web articles.
-- [references/source-quality.md](references/source-quality.md): top-tier source rules for background research.
-- [references/medium-writing-patterns.md](references/medium-writing-patterns.md): structures for Medium/Substack-style English essays.
-- [references/human-voice.md](references/human-voice.md): anti-AI style rules and human voice editing.
+- [SKILL.md](SKILL.md): unified execution protocol.
+- [references/wechat](references/wechat): Chinese WeChat writing and layout rules.
+- [references/medium-writing-patterns.md](references/medium-writing-patterns.md): Medium/Substack-style English essays.
+- [references/human-voice.md](references/human-voice.md): anti-AI style and human voice editing.
+- [references/source-quality.md](references/source-quality.md): top-tier source rules.
 - [references/research-data.md](references/research-data.md): evidence search and source discipline.
-- [references/data-visuals.md](references/data-visuals.md): chart selection and data storytelling rules.
-- [references/editorial-qa.md](references/editorial-qa.md): final quality gate before publishing.
-- [assets/shakespeare-logo.png](assets/shakespeare-logo.png): transparent mascot logo.
-- [examples/ai-data-centers](examples/ai-data-centers): complete research article with charts and HTML preview.
-- [examples/sample-essays.md](examples/sample-essays.md): fictional samples for inspecting structure and voice.
+- [references/data-visuals.md](references/data-visuals.md): chart selection and statistical graphics.
+- [references/visual-production.md](references/visual-production.md): visual direction and production rules.
+- [examples/fable-zhipu](examples/fable-zhipu): complete Chinese WeChat article.
+- [examples/ai-data-centers](examples/ai-data-centers): complete English research article with charts.
 
 ## Quality Gate
 
-Before release, the piece must pass:
+Before release:
 
+- central stance is visible
 - no unsupported factual claims
-- no weak source chain for data
+- no weak source chain
 - no generic AI filler
 - no decorative charts
-- no confusing section order
-- no ending that merely recaps
+- no default visual style
 - no broken image paths in HTML preview
-
-## Platform Notes
-
-Medium and Substack readers can tolerate long pieces. They do not tolerate padded pieces.
-
-Executives can tolerate dense memos. They do not tolerate vague ones.
-
-Public essays can be personal. They cannot be lazy.
+- platform layout is readable on mobile

@@ -1,161 +1,172 @@
 ---
 name: shakespeare-writing-studio
-description: Produce publish-ready English writing across Medium essays, Substack posts, founder notes, memos, op-eds, speeches, research-backed articles, product essays, and long-form analysis. Prioritizes strong structure, human voice, low AI feel, credible evidence, tasteful layout, optional data research, and platform-ready packaging.
+description: Produce publish-ready Chinese and English writing packages across WeChat articles, Medium/Substack essays, research notes, founder memos, op-eds, speeches, data storytelling, statistical graphics, and platform-ready HTML. Use this unified workflow for writing, rewriting, sourcing, lowering AI feel, creating visuals, and packaging final articles for Claude Code, Claude CLI, Codex CLI, and local agents.
 ---
 
-# Shakespeare Writing Studio / ZC's Writing Studio
+# Shakespeare Writing Studio
 
-This workflow turns a rough English draft, notes, transcript, outline, or idea into publish-ready writing.
+This workflow turns a rough idea, draft, notes, transcript, outline, or research question into a publish-ready writing package.
 
-Main delivery:
+Treat Chinese and English work as modules inside one editorial system. Select modules by platform, language, article type, and visual need.
 
-- `final.md`: publish-ready article, essay, memo, speech, or post.
-- `publishing-note.md`: title options, subtitle, social copy, voice notes, fact cautions, AI-feel cleanup notes.
-- Optional `article.html`: clean web preview.
-- Optional charts/figures: only when they strengthen the piece.
+## Main Deliverables
 
-## 0. Read The Rules
+- `final.md`: publish-ready article, essay, memo, speech, or research note.
+- platform HTML: `wechat-ready.html`, `medium-ready.html`, or clean web preview.
+- visuals: `assets/*.svg`, `charts/*.svg`, cover, mechanism diagram, source-backed chart, statistical atlas, timeline, map, or data card.
+- `publishing-note.md`: title options, subtitle/deck, social copy, source cautions, visual notes, AI-feel cleanup notes.
 
-Before writing, read:
+## 0. Select Modules
+
+Always read the relevant modules before writing.
+
+For every task:
+
+- `references/source-quality.md` before any background search.
+- `references/human-voice.md` before rewriting.
+- `references/visual-production.md` before any cover, chart, diagram, or image.
+- `references/editorial-qa.md` before delivery.
+
+For Chinese WeChat:
+
+- `references/wechat/chinese-finance-tech-writing.md`
+- `references/wechat/wechat-layout-patterns.md`
+- `references/wechat/layout-wechat.md`
+
+For English long-form:
 
 - `references/medium-writing-patterns.md`
-- `references/human-voice.md`
 - `references/platform-formats.md`
-- `references/source-quality.md` before any background search
-- `references/research-data.md` when the piece needs current facts, statistics, market data, or external evidence
-- `references/data-visuals.md` when charts, data cards, timelines, maps, or word clouds may help
-- `references/editorial-qa.md`
 
-These are hard constraints.
+For research and data:
 
-## 1. Understand The Draft
+- `references/research-data.md`
+- `references/data-visuals.md`
+
+For final release:
+
+- `references/release-gate.md`
+
+## 1. Build The Spine
 
 Extract:
 
+- target language and platform
+- intended reader
 - core claim
 - arguable stance
-- intended reader
-- target format/platform
-- personal or professional stakes
-- facts, names, dates, numbers
+- facts, dates, names, numbers
+- source needs
 - examples and scenes
-- claims that need sourcing or softening
+- visual opportunities
 - phrases that sound AI-generated
 
-Do not invent facts. Use `[TK]` for missing specifics.
+Before drafting, write the stance in one sentence. If it reads like "this trend is important," "值得关注," or "there are opportunities and challenges," rebuild the argument before polishing.
 
-## 2. Choose The Article Type
+## 2. Choose The Format
 
-Pick one:
+Pick one primary format:
 
-- Personal essay with an idea
-- Analytical essay
-- Founder/operator note
-- Product or technology essay
-- Research-backed article
-- Executive memo
-- Op-ed
-- Speech or keynote draft
-- Career/learning essay
-- Narrative argument
+- Chinese WeChat finance / technology article
+- English Medium / Substack essay
+- research-backed article
+- data-led report
+- founder/operator note
+- executive memo
+- op-ed
+- speech or keynote draft
+- product / technology essay
+- narrative argument
 
-The type controls the opening, section rhythm, and ending.
+The format controls the opening, section rhythm, evidence density, visual density, and ending.
 
-Before drafting, write the stance in one sentence. If it reads like "this trend is important" or "there are opportunities and challenges," rebuild the argument before polishing.
+## 3. Research With Source Discipline
 
-## 3. Rewrite The Article
+Use research only when it materially improves the piece.
 
-Build the piece around one spine:
+Allowed:
 
-`scene or tension -> problem -> lived example -> argument -> implications -> landing`
+- primary sources
+- official announcements
+- public filings
+- reputable named reporting
+- official datasets
+- research institutions
+
+Rejected:
+
+- generic SEO pages
+- unsourced blogs
+- random statistics
+- repost farms
+- AI summaries
+
+Every number used in the article or visual must have a source and date.
+
+## 4. Write And Rewrite
 
 Rules:
 
 - Open with something concrete.
-- Keep only one central claim.
+- Keep one central spine.
 - Let paragraphs vary in length.
-- Prefer plain strong verbs over abstract nouns.
-- Make transitions logical, not decorative.
+- Prefer concrete verbs over abstract nouns.
 - Use examples before broad claims.
-- Keep the writer's real point of view visible.
+- Keep the writer's point of view visible.
+- Remove generic AI scaffolding.
+- Do not overbalance the argument into bland neutrality.
 
-## 4. Remove AI Feel
+## 5. Visuals And Charts
 
-Run the anti-AI pass from `human-voice.md`.
+Visuals are shared across Chinese and English work. Statistical graphics, covers, timelines, mechanism diagrams, and source-backed charts are available to both.
 
-Delete or rewrite:
+Before making a visual:
 
-- generic thesis paragraphs
-- fake balance
-- robotic transitions
-- repeated sentence frames
-- inflated adjectives
-- over-explained conclusions
-- "not only X, but also Y" patterns
-- "in today's world" openings
+1. Write the visual job in one sentence.
+2. Choose a direction from article content.
+3. Pick the visual type.
+4. Sketch 3–5 nodes, numbers, or cards.
+5. Build the SVG/HTML.
+6. Check readability at mobile width.
 
-## 5. Platform Packaging
+Hard rule: do not default to dark background. Dark visuals are allowed only when the article's subject, tone, and metaphor justify them.
+
+For research-led articles, consider one hero statistical graphic when the reader needs to see a system rather than one metric.
+
+## 6. Platform Packaging
 
 Produce:
 
-- 1 primary title
-- 5 alternate titles
+- primary title
+- alternate titles
 - subtitle/deck
-- 1 platform-specific preview description
-- 1 LinkedIn/Twitter/X teaser
-- suggested tags
-
-## 6. Optional Research And Data
-
-Use research only when it materially improves the piece.
-
-Run `references/research-data.md` if the draft needs:
-
-- market size
-- adoption statistics
-- economic indicators
-- product or usage benchmarks
-- public company data
-- policy or demographic context
-- historical comparison
-
-Before any search, apply `references/source-quality.md`: use only top-tier sources and reject generic SEO, random blogs, unsourced statistics, and AI summaries.
-
-Run `references/data-visuals.md` if the data would be clearer as:
-
-- line chart
-- bar chart
-- slope chart
-- scatter plot
-- heatmap
-- timeline
-- map
-- word cloud
-- small multiples
-- data card
-
-Do not add charts to make an essay look "serious." Add charts only when they clarify the reader's understanding.
+- platform-specific preview description
+- social teaser
+- suggested tags or WeChat summary
+- source table if research was used
+- visual list and source notes
 
 ## 7. QA
 
-Before delivery, run `editorial-qa.md`.
-
 The piece is not done until:
 
-- it sounds human when read aloud
+- the stance is clear
 - the opening earns attention
 - each section advances the argument
 - no unsupported claims remain
 - no paragraph feels like generic AI filler
 - data sources are listed when used
-- charts are matched to the argument, not decoration
+- visuals match the article direction
+- charts clarify the argument
+- platform preview reads well on mobile
 - the ending lands with a thought, not a summary
 
 ## Hard Rules
 
 1. Do not invent facts, quotes, numbers, sources, or personal experiences.
-2. Mark missing specifics as `[TK]`.
-3. If AI assistance materially shaped the article and the target platform requires or expects disclosure, note that in `publishing-note.md`.
-4. Never optimize only for AI detectors. Optimize for truth, specificity, voice, and editorial quality.
-5. If a sentence could fit any essay, rewrite it or delete it.
-6. Background search must use top-tier sources only; never generate research from weak or random internet material.
+2. Mark missing specifics as `[TK]` or `◻◻`.
+3. Background search must use top-tier sources only.
+4. Remove obvious AI sentence scaffolds.
+5. Never use visuals as decoration.
+6. Never default to one visual style across projects.
+7. If AI assistance materially shaped the article and the target platform requires disclosure, note it in `publishing-note.md`.

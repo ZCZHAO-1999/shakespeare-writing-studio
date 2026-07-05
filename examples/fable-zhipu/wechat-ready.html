@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fable 5 被封禁，智谱冲万亿。中国模型登顶日即将来临？</title>
+  <style>
+    :root {
+      --ink: #171b1f;
+      --muted: #667078;
+      --paper: #fffaf2;
+      --wash: #f4efe5;
+      --accent: #ad4e3c;
+      --teal: #247c8d;
+      --line: #e6dbcb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 18% 0%, rgba(173, 78, 60, .12), transparent 28%),
+        radial-gradient(circle at 84% 18%, rgba(36, 124, 141, .13), transparent 30%),
+        linear-gradient(180deg, #fbf6ed 0%, #f7f3eb 56%, #eef4f0 100%);
+      color: var(--ink);
+      font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", sans-serif;
+    }
+    .page {
+      width: min(760px, calc(100% - 32px));
+      margin: 24px auto 60px;
+      background: rgba(255, 253, 248, .82);
+      border: 1px solid rgba(210, 198, 181, .62);
+      border-radius: 28px;
+      box-shadow: 0 24px 60px rgba(89, 72, 54, .12);
+      overflow: hidden;
+    }
+    .hero { width: 100%; display: block; }
+    article { padding: 28px min(46px, 6vw) 48px; }
+    .eyebrow {
+      color: var(--accent);
+      font: 700 12px/1.4 "Avenir Next", sans-serif;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      margin: 4px 0 14px;
+    }
+    h1 {
+      margin: 0 0 18px;
+      font-family: "Songti SC", "Noto Serif CJK SC", serif;
+      font-size: clamp(34px, 7vw, 54px);
+      line-height: 1.12;
+      letter-spacing: -.04em;
+    }
+    .deck {
+      margin: 0 0 28px;
+      color: #44515a;
+      font-size: 20px;
+      line-height: 1.75;
+    }
+    p {
+      margin: 22px 0;
+      font-size: 18px;
+      line-height: 2.02;
+      letter-spacing: .01em;
+    }
+    .lead p:first-child::first-letter {
+      float: left;
+      font-family: Georgia, "Songti SC", serif;
+      font-size: 78px;
+      line-height: .88;
+      margin: 10px 12px 0 0;
+      color: var(--accent);
+    }
+    .signal {
+      margin: 34px 0;
+      padding: 24px 24px 22px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, rgba(173, 78, 60, .1), rgba(36, 124, 141, .08));
+      border: 1px solid rgba(173, 78, 60, .18);
+    }
+    .signal strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-family: "Songti SC", serif;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 30px 0 36px;
+    }
+    .card {
+      min-height: 116px;
+      padding: 18px 16px;
+      border-radius: 20px;
+      background: #fffefa;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 26px rgba(75, 60, 46, .08);
+    }
+    .card b {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 25px;
+      font-family: Georgia, "Songti SC", serif;
+      color: var(--accent);
+    }
+    .card span { color: var(--muted); font-size: 14px; line-height: 1.6; }
+    h2 {
+      margin: 50px 0 18px;
+      font-family: "Songti SC", "Noto Serif CJK SC", serif;
+      font-size: 28px;
+      line-height: 1.35;
+      letter-spacing: -.02em;
+    }
+    h2::before {
+      content: "";
+      display: block;
+      width: 42px;
+      height: 4px;
+      margin-bottom: 18px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), var(--teal));
+    }
+    .timeline {
+      width: 100%;
+      display: block;
+      margin: 34px 0 18px;
+      border-radius: 20px;
+    }
+    .quote {
+      margin: 38px 0;
+      padding: 26px 28px;
+      border-left: 5px solid var(--accent);
+      background: rgba(255, 250, 242, .9);
+      font-family: "Songti SC", serif;
+      font-size: 24px;
+      line-height: 1.68;
+    }
+    .sources {
+      margin-top: 52px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.72;
+    }
+    .sources a { color: #245f72; }
+    @media (max-width: 640px) {
+      .page { width: min(100% - 18px, 760px); margin-top: 10px; border-radius: 20px; }
+      article { padding: 22px 20px 38px; }
+      p { font-size: 17px; line-height: 1.95; }
+      .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <img class="hero" src="assets/cover.svg" alt="Fable 5 被封禁，智谱冲万亿封面图">
+    <article>
+      <div class="eyebrow">Analysis · Model Ascent</div>
+      <h1>Fable 5 被封禁，智谱冲万亿。<br>中国模型登顶日即将来临？</h1>
+      <p class="deck">Fable 5 暂停服务，GLM-5.2 接着发布，智谱市值冲上万亿叙事。市场正在提前交易一个问题：中国模型会不会迎来真正的登顶窗口？</p>
+      <section class="lead">
+        <p>6 月 12 日，美国商务部把 Anthropic 的 Fable 5 和 Mythos 5 放进出口管制清单。</p>
+        <p>Anthropic 后来在官方说明里给出解释：命令立即生效，公司无法实时核验每个用户的国籍，于是先暂停两款模型对所有用户的访问。到 6 月 30 日，限制解除，Fable 5 从 7 月 1 日开始恢复全球使用。</p>
+        <p>这次暂停很短，信号很重。</p>
+        <p>我的判断是：这更像一次“登顶叙事”的提前交易。中国模型确实拿到了罕见窗口，但真正登顶还要过能力、生态和交付三关。</p>
+      </section>
+      <div class="cards">
+        <div class="card"><b>6.12</b><span>Fable 5 / Mythos 5 被纳入出口管制，Anthropic 暂停访问。</span></div>
+        <div class="card"><b>1M</b><span>GLM-5.2 官方强调 1M 上下文、长任务与代码能力。</span></div>
+        <div class="card"><b>万亿</b><span>智谱市值叙事升温，模型层开始被当作供应链资产定价。</span></div>
+      </div>
+      <div class="signal"><strong>我的判断：</strong>智谱拿到的是窗口。市场先交易登顶想象，产品还要继续证明自己。</div>
+      <h2>01 Fable 5 暂停，给了市场一个想象入口</h2>
+      <p>Fable 5 的暂停比普通宕机更值得警惕。宕机考验服务恢复，出口管制改变长期预期。</p>
+      <p>对开发者来说，模型一旦进入生产链路，就会接入代码仓库、文档系统、内部工具、自动化流程和客户交付。模型供应突然中断，受影响的范围会从一次对话扩散到整条工作流。</p>
+      <p>如果最先进模型也会被政策突然切断，那么非美国模型的价值就会被重新估算。它们会从榜单竞争，进入全球模型供应格局的比较。</p>
+      <p>这就是 GLM-5.2 被看见的窗口。它发布在一个敏感时间点：外部不确定性突然放大，中国模型的叙事空间随之打开。</p>
+      <h2>02 智谱抓住的关键词是“开放”</h2>
+      <p>GLM-5.2 的关键卖点有三个。</p>
+      <p>第一，1M 上下文。官方文档强调它支持 1M lossless context，用来降低长任务里的上下文漂移和目标遗忘。</p>
+      <p>第二，开放权重。Z.ai 官方博客把 MIT 许可写成核心卖点，强调没有区域限制，也更容易被开发者接入和自部署。</p>
+      <p>第三，面向长任务和代码。GitHub 页面披露的榜单数据里，GLM-5.2 在 Terminal-Bench 2.1、SWE-bench Pro 等代码与工程类任务上较前代有明显提升。</p>
+      <p>这些能力本身当然需要继续被独立验证。真正生产环境里，价格、延迟、稳定性、工具调用、上下文保真、企业合规都比榜单更难。</p>
+      <p>但在 Fable 5 暂停服务的那个窗口，智谱讲出的故事足够清楚：当海外闭源模型出现不确定性，开放模型会变得更有吸引力。</p>
+      <img class="timeline" src="assets/timeline.svg" alt="Fable 5 与 GLM-5.2 事件时间轴">
+      <h2>03 万亿市值买的是登顶预期</h2>
+      <p>智谱冲上万亿港元市值，不能只按模型能力解释。更合理的拆法，是三层预期叠在一起。</p>
+      <p>第一层，地缘政治预期。先进模型被纳入监管之后，中国模型的全球可选性会被重新看见。</p>
+      <p>第二层，开放生态预期。开放权重意味着开发者可以下载、微调、部署、接入，也可以把模型放进自己的代理系统里。</p>
+      <p>第三层，国产模型上桌的预期。中国资本市场熟悉“卡脖子替代”的定价逻辑，算力层出现过，模型层现在也开始出现。</p>
+      <p>这三层预期可以解释短期热度，却不能自动变成长期护城河。发布当天的热度留不住用户，文档、API、推理成本、生态工具、企业支持和连续迭代才会留住用户。</p>
+      <h2>04 中国模型离“登顶”还差什么</h2>
+      <p>“登顶”至少要靠三件事支撑。</p>
+      <p>第一关，能力稳定。长上下文、代码、工具调用、推理成本、延迟和稳定性，都要在真实任务里经得起反复使用。</p>
+      <p>第二关，生态接住。模型能力要被 SDK、文档、部署工具、开发者社区、企业服务和案例沉淀下来。只有模型，没有生态，热度会散得很快。</p>
+      <p>第三关，企业长期使用。企业不会因为一次海外模型暂停就迁移核心流程。它们会试用、对比、压价、验证，然后才会把模型放进生产系统。</p>
+      <div class="quote">Fable 5 事件更像一声发令枪。它让中国模型站到更亮的位置，但真正的比赛刚刚开始。</div>
+      <h2>05 这次事件会留下什么</h2>
+      <p>如果 Fable 5 只是一次短暂插曲，市场热度会退。如果类似事件继续出现，AI 产业会进入新的评估逻辑：模型能力、供应安全、开放生态、部署自由度一起定价。</p>
+      <p>国产模型的机会来自两条线：一条是能力追赶，一条是全球开发者对外部不确定性的警惕。前者决定长期上限，后者决定短期窗口。</p>
+      <p>Anthropic 关上的那扇门已经重新打开。但市场已经记住了门会关上这件事。</p>
+      <section class="sources">
+        <strong>Sources</strong><br>
+        Anthropic, “Redeploying Claude Fable 5”; Z.ai GLM-5.2 official blog and release notes; Z.ai GLM-5 GitHub; 36氪 / 豹变; South China Morning Post.
+      </section>
+    </article>
+  </main>
+</body>
+</html>
